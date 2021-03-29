@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid {
+    float:left;
+}
+.box{
+    position: relative;
+    border: 1px solid black;
+    background-color: plum;
+    margin:10px;
+}
+
+.protein {
+    border: 1px solid black;
+    width:33%;
+    text-align: center;
+    float:right;
+}
+
+#chicken {
+    background-color: pink;
+}
+
+#beef {
+    background-color: aqua;
+}
+
+#sushi {
+    background-color: gold;
+}
+
+p {
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+    .grid {
+        width: 33%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .grid {
+        width: 50%;
+    }
+
+    #third{
+        position: absolute;
+        width: 100%;
+        top: 250px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .grid {
+        width: 100%;
+    }
+}
